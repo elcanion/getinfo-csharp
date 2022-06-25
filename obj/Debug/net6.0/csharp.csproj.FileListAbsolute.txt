@@ -13,3 +13,5 @@ D:\prog\csharp\obj\Debug\net6.0\refint\csharp.dll
 D:\prog\csharp\obj\Debug\net6.0\csharp.pdb
 D:\prog\csharp\obj\Debug\net6.0\csharp.genruntimeconfig.cache
 D:\prog\csharp\obj\Debug\net6.0\ref\csharp.dll
+D:\prog\csharp\bin\Debug\net6.0\Npgsql.dll
+D:\prog\csharp\obj\Debug\net6.0\csharp.csproj.CopyComplete

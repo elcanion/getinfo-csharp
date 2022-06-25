@@ -2,6 +2,14 @@ using System.Text.RegularExpressions;
 class TestUser {
     static void Main() {
 
+        Console.Write("Deseja executar DROP TABLE primeiro? (s ou n)");
+        string decisao = Console.ReadLine() ?? string.Empty;
+        if (decisao.ToUpper().Equals("S")) {
+                Console.WriteLine("Excluindo tabela...");
+                Database.DropTable("users");
+                Database.CreateUsersTable();
+        }
+
         string? name;
         Console.Write("Digite seu nome: ");
         while (String.IsNullOrEmpty(name = Console.ReadLine())) {
@@ -24,5 +32,9 @@ class TestUser {
         Console.WriteLine($"Olá {user.Name}");
         Console.WriteLine($"Você nasceu em {user.YearOfBirth} e você tem {user.Age} anos");
         Console.WriteLine($"Seu email é {user.Email}");
+
+        Database.InsertUserIntoTable(user);
+
+
     }
 }
