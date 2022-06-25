@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "/R4sgIoxdNshKZqRutMqdNU6dh23q7hzjVRYBNPo245RRQZ/I1AeUFKYaSuLE026Dpc0NfZrh3iiro+hOwKqUg==",
+  "dgSpecHash": "R7MIMe4NHm00irDefDg8eU0CgHzoeqPd5CGRFsKifHzzGmUhSRRwiDZAFeRjiUJQX0iTcga2v1oIoxL2gR+J2Q==",
   "success": true,
   "projectFilePath": "D:\\prog\\csharp\\csharp.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\enkidu\\.nuget\\packages\\npgsql\\6.0.5\\npgsql.6.0.5.nupkg.sha512",
+    "C:\\Users\\enkidu\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
