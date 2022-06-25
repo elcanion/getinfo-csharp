@@ -1,6 +1,6 @@
 using System.Text.RegularExpressions;
 class TestUser {
-    static void Main() {
+    public static void TestUserUseCase() {
 
         Console.Write("Deseja executar DROP TABLE primeiro? (s ou n)");
         string decisao = Console.ReadLine() ?? string.Empty;
