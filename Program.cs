@@ -25,6 +25,11 @@ class ConsoleLogger : ILogger
     }
 }
 
+class DataStore<T>
+{
+    public T Value { get; set; }
+}
+
 public class Program {
 
     static void Main() {
@@ -39,15 +44,35 @@ public class Program {
 
         string[] names = {"hehe", "rsrs"};
 
-        List<User> users = new List<User>();
-
         User user1 = new User("Hehe", 1996, 26, "hehe@gmail.com");
         User user2 = new User("Rsrs", 1888, 37, "rsrs@hotmail.com");
-        users.Add(user1);
-        users.Add(user2);
+
+        List<User> users = new List<User>
+        {
+            user1,
+            user2
+        };
 
         foreach(User user in users) {
             Console.WriteLine($"Name:{user.Name}\nEmail:{user.Email}\n");
         }
+
+        DataStore<string> store = new DataStore<string>();
+        store.Value = "Working on things";
+        Console.WriteLine(store.Value);
+
+        string test = "testing";
+
+        Console.WriteLine("String sorted: " + SortString(test));
+
+    }
+
+    static string SortString(string input)
+    {
+        char[] stringToSort = input.ToArray();
+        Console.WriteLine(stringToSort);
+        Array.Sort(stringToSort);    
+        Console.WriteLine(stringToSort);
+        return new string(stringToSort);
     }
 }
